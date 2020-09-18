@@ -11,10 +11,10 @@ const CollectionsOverview = ({collections}) => (
       <CollectionPreview key={id} {...otherProps} />
     ))}
   </CollectionsOverviewContainer>
-);
+)
 
 const mapStateToProps = createStructuredSelector({
   collections: selectCollectionsForPreview
-});
+})
 
 export default connect(mapStateToProps)(CollectionsOverview);
